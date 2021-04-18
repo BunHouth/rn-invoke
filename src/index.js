@@ -14,5 +14,6 @@ module.exports = {
   React: require('./react.js'),
   IOS: require('./ios.js'),
   call: Invoke.call,
+  getScrollView: Invoke.getScrollView,
   execute
 };

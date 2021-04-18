@@ -29,12 +29,12 @@ function call(target, method, ...args) {
   };
 }
 
-function getScrollView (targetRef) {
-  if (targetRef instanceof Object && targetRef._nativeTag) {
-    targetRef = React.view(target);
+function getScrollView (target) {
+  if (target instanceof Object && target._nativeTag) {
+    target = React.view(target);
   }
 
-  return call(targetRef, 'scrollView');
+  return call(target, 'scrollView');
 }
 
 module.exports = {
