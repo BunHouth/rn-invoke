@@ -14,5 +14,5 @@ module.exports = {
   React: require('./react.js'),
   IOS: require('./ios.js'),
   call: Invoke.call,
-  execute: execute
+  execute
 };

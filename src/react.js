@@ -8,5 +8,5 @@ function view(component) {
 }
 
 module.exports = {
-  view: view
+  view
 };

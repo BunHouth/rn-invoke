@@ -13,6 +13,6 @@ const CGRect = (value) => {
 };
 
 module.exports = {
-  CGPoint: CGPoint,
-  CGRect: CGRect
+  CGPoint,
+  CGRect
 };
