@@ -2,7 +2,7 @@
 import React from './react';
 
 function call(target, method, ...args) {
-  if (target instanceof Object && target._nativeTag) {
+  if (target instanceof Object && target?.type !== 'React.View') {
     target = React.view(target);
   };
 
@@ -30,10 +30,6 @@ function call(target, method, ...args) {
 }
 
 function getScrollView (target) {
-  if (target instanceof Object && target._nativeTag) {
-    target = React.view(target);
-  }
-
   return call(target, 'scrollView');
 }
 
